@@ -1,7 +1,4 @@
--- ===================================================================================
 -- SCRIPT CÀI ĐẶT DATABASE WEBTHETHAO - PHIÊN BẢN ĐƠN GIẢN
--- Tự động xóa database cũ nếu tồn tại để tránh xung đột.
--- ===================================================================================
 
 -- XÓA DATABASE CŨ NẾU TỒN TẠI VÀ TẠO MỚI
 DROP DATABASE IF EXISTS `webthethao`;
