@@ -119,52 +119,7 @@ if ($isLoggedIn) {
                 </section>
 
                 
-                <section class="category-showcase-block">
-                    <header class="category-showcase-header">
-                        <h2 class="category-title">
-                            <?php if(isset($categoryGoc[0])) { ?>
-                                <a href="category.php?slug=<?php echo $categoryGoc[0]['slug']; ?>"><?php echo strtoupper($categoryGoc[0]['name']); ?></a>
-                            <?php } ?>
-                        </h2>
-                        <nav class="sub-category-nav">
-                            <?php 
-                            
-                            for($i = 1; $i < count($categoryGoc); $i++) { 
-                            ?>
-                                <a href="category.php?slug=<?php echo $categoryGoc[$i]['slug']; ?>"><?php echo $categoryGoc[$i]['name']; ?></a>
-                            <?php } ?>
-                        </nav>
-                    </header>
-                    <div class="category-showcase-content">
-                        
-                        <?php if(isset($tinTheThao[0])) { ?>
-                        <article class="showcase-top-story">
-                            <a href="article.php?slug=<?php echo $tinTheThao[0]['slug']; ?>" class="story-image">
-                                <img src="<?php echo $tinTheThao[0]['image_url']; ?>" alt="<?php echo $tinTheThao[0]['title']; ?>">
-                            </a>
-                            <div class="story-content">
-                                <h3><a href="article.php?slug=<?php echo $tinTheThao[0]['slug']; ?>"><?php echo $tinTheThao[0]['title']; ?></a></h3>
-                                <p><?php echo substr($tinTheThao[0]['summary'], 0, 150); ?>...</p>
-                            </div>
-                        </article>
-                        <?php } ?>
-                        
-                        
-                        <div class="showcase-bottom-stories">
-                            <?php 
-                            $tinNhoTheThao = array_slice($tinTheThao, 1, 3);
-                            foreach($tinNhoTheThao as $tin) { 
-                            ?>
-                            <article class="story-small">
-                                <a href="article.php?slug=<?php echo $tin['slug']; ?>" class="story-image">
-                                    <img src="<?php echo $tin['image_url']; ?>" alt="<?php echo $tin['title']; ?>">
-                                </a>
-                                <h4><a href="article.php?slug=<?php echo $tin['slug']; ?>"><?php echo $tin['title']; ?></a></h4>
-                            </article>
-                            <?php } ?>
-                        </div>
-                    </div>
-                </section>
+                
 
                 <hr style="margin: 30px 0; border: 0; border-top: 5px solid #eee;">
 
