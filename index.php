@@ -173,7 +173,7 @@ if ($isLoggedIn) {
     </div>
     </main>
 
-    <!-- FOOTER -->
+    
     <footer style="margin-top:40px;padding:20px 0;border-top:1px solid #eee;color:#666;font-size:13px">
         <div class="container" style="display:flex;justify-content:space-between;align-items:center">
             <div>© 2025 Web Thể Thao - Tất cả vì người đọc.</div>
